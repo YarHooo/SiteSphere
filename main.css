@@ -37,6 +37,13 @@ ol, ul {
 	list-style: none;
 }
 
+:root {
+  --padding-default: 1em;
+  --margin-bottom: 2em;
+  --font-size-default: 16px;
+}
+
+
 blockquote, q {
 	quotes: none;
 }
@@ -52,8 +59,10 @@ table {
 }
 
 body {
-	-webkit-text-size-adjust: none;
+  padding: var(--padding-default);
+  margin: 0 0 var(--margin-bottom) 0;
 }
+
 
 mark {
 	background-color: transparent;
